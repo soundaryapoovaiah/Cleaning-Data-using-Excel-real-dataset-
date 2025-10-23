@@ -1,62 +1,115 @@
-📘 Project Overview
+# 🧹 Data Cleaning Excel Project – **U.S. Presidents Dataset**
 
-This project demonstrates my ability to analyze, clean, and standardize real-world data using Microsoft Excel. The dataset used contains information about U.S. Presidents and the goal was to transform inconsistent, unformatted raw data into a clean, analysis-ready dataset.
+This repository showcases my **Excel-based data cleaning project**, where I worked on a **real-world dataset** containing information about **U.S. Presidents**.  
+The dataset initially had **duplicate records**, **inconsistent text formatting**, **extra spaces**, **special symbols**, and **irrelevant columns**.
 
-Through this project, I showcased my skills in data preprocessing, formula-based transformations and logical validation steps without using programming, purely through Excel functions and data tools.
+The goal of this project is to demonstrate my **end-to-end Excel data-cleaning workflow** through a structured, step-by-step approach—transforming raw, inconsistent data into a **clean and analysis-ready** dataset.
 
-🧠 Key Cleaning Operations Performed
+---
 
-1] Removed Duplicate Records
-   Used Remove Duplicates feature to ensure unique records across all entries.
+## 🎯 **OBJECTIVE**
 
-2] Standardized Text Formatting
-   Applied =PROPER() to convert inconsistent uppercase/lowercase President names into proper case.
+To **clean and organize** an unstructured U.S. Presidents dataset by:
 
-3] Corrected Party Names
-   Identified spelling inconsistencies (e.g., Republican vs Republicans) using filters and manually corrected them.
+- **Removing duplicate records**
+- **Standardizing name formats** (Proper Case)
+- **Correcting spelling inconsistencies** in political parties
+- **Trimming extra spaces** in Vice President names
+- **Converting salary values to numeric** format
+- **Standardizing date formats** across records
+- **Deleting irrelevant columns** (e.g., *Prior* details, redundant serial numbers)
 
-4] Removed Unnecessary Characters and Spaces
-   Used =TRIM() to clean extra spaces in the Vice President column.
+---
 
-5] Cleaned Salary Field
-   Converted salary values from text to numeric format by removing dollar signs and decimals for database compatibility.
+## 🧾 **Problem Description**
 
-6] Standardized Date Formats
-   Applied Short Date format to unify inconsistent date representations.
+The **raw dataset** was inconsistent and unsuitable for analysis. Key issues identified:
 
-7] Deleted Unnecessary Columns
-   Removed redundant columns (like multiple serial numbers and “Prior” details) to simplify the dataset for analysis.
+- **Duplicate entries** in the President records  
+- **Mixed letter casing** (e.g., **GEORGE WASHINGTON** vs **George Washington**)  
+- **Party name variations** (e.g., **Republican** vs **Republicans**)  
+- **Extra spaces** in the **Vice President** column  
+- **Salary values stored as text** with “$” and “cents”  
+- **Inconsistent date formats**  
+- **Unnecessary columns** that didn’t contribute to analysis
 
-🧩 Before vs After
+Because of these issues, the dataset required **significant cleaning** before visualization or reporting.
 
-Before: Raw, inconsistent data with mixed capitalization, extra spaces, and irregular formats.
+---
 
-After: Clean, uniform, and structured dataset ideal for visualization or database insertion.
+## 🧰 **Tools and Features Used**
 
-🧰 Tools & Techniques Used
+All cleaning was performed in **Microsoft Excel**, using formulas and built-in tools:
 
-Microsoft Excel — formulas (PROPER(), TRIM()), filters, formatting tools, and duplicate removal.
+### **Excel Features**
+- **Remove Duplicates** → identify and eliminate repeated records  
+- **Filter & Sort** → detect inconsistencies in categorical fields like **Party**  
+- **Number Formatting** → convert salary **text** values to **numeric**  
+- **Date Formatting (Short Date)** → unify inconsistent date patterns
 
-Data Profiling — manual inspection and validation for consistency.
+### **Excel Formulas**
+- ``=PROPER(cell)`` → **Proper Case** conversion (e.g., “**JAMES MONROE**” → “**James Monroe**”)  
+- ``=TRIM(cell)`` → remove **leading/trailing/double spaces** (used on **Vice President** names)
 
-Documentation — created detailed visual report (PDF) explaining the process and rationale for every step.
+### **Column Management**
+- Deleted **irrelevant fields** (duplicate **Serial No.**, unnecessary **Prior** info) to keep the dataset **concise and readable**.
 
-💡 What I Learned
+---
 
--- How to apply data cleaning principles even without programming tools.
+## 🪜 **Step-by-Step Cleaning Process**
 
--- The importance of consistency in datasets before analysis or visualization.
+1. **Removed Duplicate Records**  
+   - Used **Data → Remove Duplicates**; identified and deleted one redundant record.
 
--- Practical use of Excel formulas for automation in cleaning repetitive errors.
+2. **Standardized Name Formatting**  
+   - Applied ``PROPER()`` on the **President Name** column to fix all-caps entries.
 
-🚀 Next Steps
+3. **Corrected Party Spelling Errors**  
+   - Fixed inconsistencies (e.g., **“Republicans”** → **“Republican”**; cleaned **Whig** entries with extra text).
 
-I plan to extend this project by:
+4. **Trimmed Extra Spaces**  
+   - Applied ``TRIM()`` to the **Vice President** column to eliminate unnecessary spaces.
 
-Importing the cleaned dataset into Power BI or Tableau for visualization.
+5. **Converted Salary to Numeric Values**  
+   - Removed **$** symbols and decimals; converted salaries from **text** to **numbers**.
 
-Comparing Excel-based cleaning with Python (Pandas)-based cleaning workflows.
+6. **Standardized Date Formats**  
+   - Unified all dates using **Short Date** under **Format Cells**.
 
-👩‍💻 Author
+7. **Removed Unnecessary Columns**  
+   - Deleted duplicate **Serial No.** and **Prior** columns that didn’t add analytical value.
 
-Soundarya Poovaiah Kookanda
+8. **Final Verification**  
+   - Validated data consistency; ensured all columns follow standardized **formats and values**.
+
+---
+
+## 🧩 **Outcome**
+
+- ✅ Dataset is **clean, structured, and analysis-ready**  
+- ✅ **Duplicates, spelling inconsistencies, and extra spaces** removed  
+- ✅ **Salary** and **Date** fields properly formatted  
+- ✅ Consistent schema suitable for **Power BI**, **Tableau**, or **database** import
+
+---
+
+## 📚 **Learning Reflection**
+
+Through this project, I learned to:
+
+- **Identify and correct** real-world data inconsistencies through validation  
+- Use **Excel formulas** effectively for text cleaning and standardization  
+- Apply **filtering/formatting** to spot and resolve errors quickly  
+- Maintain **data integrity** while transforming messy data into reliable inputs
+
+This project strengthened my confidence in **data-cleaning fundamentals** and built a strong foundation for transitioning to **Python (Pandas)** and **Power BI** for advanced analytics and automation.
+
+---
+
+## 👩‍💻 **Author**
+
+**Soundarya Poovaiah Kookanda**  
+📧 **soundaryakookanda@gmail.com**  
+🎓 **Master of Engineering in Computer Science — University of Cincinnati**
+
+
