@@ -1,2 +1,6 @@
-# Cleaning-Data-using-Excel-real-dataset-
-Real-world data cleaning project using Microsoft Excel — standardized U.S. Presidents dataset by removing duplicates, correcting text formats, trimming spaces, and preparing clean data for analysis.
+🧹 Cleaning Data using Excel — Real Dataset (US Presidents)
+📘 Project Overview
+
+This project demonstrates my ability to analyze, clean, and standardize real-world data using Microsoft Excel. The dataset used contains information about U.S. Presidents, and the goal was to transform inconsistent, unformatted raw data into a clean, analysis-ready dataset.
+
+Through this project, I showcased my skills in data preprocessing, formula-based transformations, and logical validation steps — all without using programming, purely through Excel functions and data tools.
